@@ -1,0 +1,29 @@
+Host dpd_tunel
+	HostName 10.48.203.110 
+	HostKeyAlgorithms=+ssh-dss
+	Ciphers=aes256-cbc
+	PubkeyAcceptedKeyTypes=+ssh-rsa
+	User=bs
+	Port=22
+	IdentityFile ~/.ssh/id_rsa
+Host bsf_prod
+	HostName 192.168.120.68
+	User=mhladki
+	IdentityFile ~/.ssh/id_rsa
+Host spartacus_sftp
+	HostName dlsbstdpprodbs45u.blob.core.windows.net
+	User dlsbstdpprodbs45u.fsasabsfcwreports.cwreportsuser
+	IdentityFile ~/.ssh/cwreportskey.pem
+	PubkeyAcceptedKeyTypes=+ssh-rsa
+Host gerrit
+	HostName gerrit.bluesoft.com
+	Port 29418
+	User mhladki
+	IdentityFile ~/.ssh/id_rsa
+	PubkeyAcceptedKeyTypes=+ssh-rsa
+  	IdentitiesOnly yes
+Host bsf_dev
+	HostName 192.168.120.69
+	User=mhladki
+        IdentityFile ~/.ssh/id_rsa
+
