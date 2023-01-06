@@ -162,3 +162,6 @@ map Y y$
 nnoremap <C-L> :nohl<CR><C-L>
 
 "------------------------------------------------------------
+
+autocmd BufNewFile,BufRead ~/.local/share/chezmoi/dot_bashrc.* set filetype=sh
+
